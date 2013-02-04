@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="apple-mobile-web-app-capable" content="yes" />    
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=device-dpi" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/bootstrap.js"></script>
+  </head>
+  <body>
+    <audio id="beep">
+      <source src="sound/beep.m4a"></source>
+    </audio>
+    <div class="container-fluid">
+      <div class="row-fluid">
+      
+        <div id="nav" class="span2">
+          <ul>
+            <li class="nav-a">LCARS UI 0.1</li>
+            <li class="nav-b">
+              Online
+              <div class="hr-top"><div class="hr-block"></div></div>
+            </li>
+            <li class="nav-c" id="selected">
+              Analysis
+              <div class="hr-bottom"><div class="hr-block"></div></div>
+            </li>
+            <li class="nav-d">Database</li>
+            <li class="nav-e">Mode Select</li>
+            <li class="nav-f">View</li>
+          </ul>
+        </div>
+      
+        <div id="top" class="span10">
+          <div id="lcars">
+            <div class="icons">
+              <icon class="active" id="audioSwitch"><i class="icon-volume-up"></i></icon>
+              <icon><i class="icon-warning-sign"></i></icon>
+            </div>
+            <h1>LCARS Interface 0.1</h1>
+            <p>Suspendisse non est nec dui volutpat varius a non dui. Proin vel ligula dolor, et laoreet ipsum. Nullam ac leo et nibh blandit volutpat vitae elementum mi. Nulla sollicitudin varius mauris ac rhoncus. Aliquam erat volutpat. Sed et purus lorem, id dictum est.</p>
+          </div>
+        </div>
+
+        <div id="main"></div>
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,131 @@
+body {
+  background: #000000;
+  margin: 0px;
+  color: #FF965B;
+  font-family: "HelveticaNeue-CondensedBold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+h1 {
+  font-size: 50px;
+  line-height: 50px;
+  margin: 0px;
+}
+
+.container-fluid {
+  margin-top: 20px;
+}
+
+#top {
+  min-height: 100px;
+  text-align: right;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0px;
+  margin: 0px;
+  height: 100%;
+  min-height: 600px;
+}
+  ul li {
+    background-color: #B781B8;
+    color: #000000;
+    padding: 6px 6px 0 0;
+    text-align: right;
+    font-size: 16px;
+    margin-bottom: 4px;
+    min-height: 40px;
+    height: 9%;
+    position: relative;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    -moz-transition: all 0.4s;
+  }
+    li:active {
+      opacity: 0.8;
+    }
+    li:hover {
+    	cursor: pointer;
+    }
+    li#selected {
+    	min-height: 80px;
+      height: 40%;
+    }
+    li.nav-a {
+    }
+    li.nav-b {
+      background-color: #7F74EF;
+      border-radius: 0px 0px 0px 60px;
+    }
+    li.nav-c {
+      background-color: #C0484C;
+      border-radius: 60px 0px 0px 0px;
+    }
+    li.nav-d {
+      background-color: #C0484C;
+    }
+    li.nav-e {
+      background-color: #FB8500;
+    }
+    li.nav-f {
+      background-color: #FF965B;
+    }
+
+.hr-top {
+	position: absolute;
+	background-color: #7F74EF;
+	margin-left: 128px;
+	height: 44px;
+	bottom: 0px;
+  z-index: -10;
+}
+  .hr-top .hr-block {
+  	background-color: #000000;
+  	height: 22px;
+  	border-bottom-left-radius: 30px;
+  }
+.hr-bottom {
+  position: absolute;
+	background-color: #C0484C;
+	margin-left: 128px;
+	height: 44px;
+	top: 0px;
+  z-index: -10;
+}
+  .hr-bottom .hr-block {
+  	background-color: #000000;
+  	height: 22px;
+  	margin-top: 22px;
+  	border-top-left-radius: 30px;
+  }
+
+.icons icon {
+  float: left;
+  margin-right: 8px;
+}
+
+icon {
+  width: 38px;
+  height: 38px;
+  background-color: #333333;
+  color: #000000;
+  display: block;
+  text-align: center;
+  transition: all 0.2s;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  font-size: 18px;
+  display: table;
+}
+  icon.active {
+    background-color: #FB8500;
+  }
+  icon:hover {
+    cursor: pointer;
+  }
+  [class^="icon-"], [class*=" icon-"] {
+    vertical-align: middle;
+    display: table-cell;
+  }
