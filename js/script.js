@@ -2,7 +2,7 @@ $('document').ready(function() {
 
   var audioBeep = $('#beep')[0]
 
-  $('li').each(function() {
+  $('li.expandable').each(function() {
   	$(this).click(function() {
   		$('#selected').removeAttr('id')
   		$(this).attr('id', 'selected')

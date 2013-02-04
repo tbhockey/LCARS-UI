@@ -14,17 +14,24 @@ h1 {
   margin: 0px;
 }
 
+a, a:active, a:visited {
+  color: #7F74EF;
+}
+a:hover {
+  text-decoration: none;
+}
+
 .container-fluid {
   margin-top: 20px;
 }
 
 #top {
-  min-height: 100px;
+  height: 100px;
   text-align: right;
 }
 
 #main {
-  margin-top: 80px;
+  margin-top: 100px;
 }
 
 ul {
@@ -58,10 +65,11 @@ ul {
       height: 40%;
     }
     li.nav-a {
-    }
-    li.nav-b {
       background-color: #7F74EF;
       border-radius: 0px 0px 0px 60px;
+      height: 130px;
+    }
+    li.nav-b {
     }
     li.nav-c {
       background-color: #C0484C;
