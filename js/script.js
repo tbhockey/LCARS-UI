@@ -17,6 +17,13 @@ $('document').ready(function() {
     $(this).toggleClass('active')
   })
 
+  $('.btn').click( function() {
+    $(this).toggleClass('btn-active')
+    if ($('#audioSwitch').hasClass('active')) {
+      audioBeep.play()
+    }
+  })
+
   // Set dimensions
   setDimensions = function() {
     var windowHeight = $(window).height() - 40
@@ -28,7 +35,10 @@ $('document').ready(function() {
     $('.hr-bottom').css('margin-left', $('#nav ul').width() + 'px')
   }
 
+  // Initiate
+  initFastButtons()
   setDimensions()
+
   $(window).resize(function() {
   	setDimensions()
   })
