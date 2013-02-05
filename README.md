@@ -5,6 +5,8 @@ This project is built on top of [Bootstrap](http://twitter.github.com/bootstrap)
 
 Now fork it and make it so!
 
+View a demo at [http://lcarsui.herokuapp.com](http://lcarsui.herokuapp.com).
+
 ================
 ## Buttons
 `.btn` Basic square button. This is a prerequisite for any button.
