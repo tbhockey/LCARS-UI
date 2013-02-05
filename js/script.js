@@ -1,13 +1,14 @@
 $('document').ready(function() {
 
   var audioBeep = $('#beep')[0]
+  var audioOpen = $('#open')[0]
 
   $('li.expandable').each(function() {
   	$(this).click(function() {
   		$('#selected').removeAttr('id')
   		$(this).attr('id', 'selected')
       if ($('#audioSwitch').hasClass('active')) {
-        audioBeep.play()
+        audioOpen.play()
       }
   	})
   })
@@ -17,11 +18,30 @@ $('document').ready(function() {
     $(this).toggleClass('active')
   })
 
-  $('.btn').click( function() {
+  $('#main').on('click', '.btn', function() {
     $(this).toggleClass('btn-active')
     if ($('#audioSwitch').hasClass('active')) {
       audioBeep.play()
     }
+  })
+
+  // Alternate page content
+  $('#main').html($('#sectionC').html())
+
+  $('.nav-c').click( function() {
+    $('#main').html($('#sectionC').html())
+  })
+
+  $('.nav-d').click( function() {
+    $('#main').html($('#sectionD').html())
+  })
+
+  $('.nav-e').click( function() {
+    $('#main').html($('#sectionE').html())
+  })
+
+  $('.nav-f').click( function() {
+    $('#main').html($('#sectionF').html())
   })
 
   // Set dimensions
@@ -35,12 +55,12 @@ $('document').ready(function() {
     $('.hr-bottom').css('margin-left', $('#nav ul').width() + 'px')
   }
 
+  $(window).resize(function() {
+    setDimensions()
+  })
+
   // Initiate
   initFastButtons()
   setDimensions()
-
-  $(window).resize(function() {
-  	setDimensions()
-  })
 
 })

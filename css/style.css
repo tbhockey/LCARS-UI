@@ -8,12 +8,27 @@ body {
   font-size: 16px;
 }
 
+
+/*** TYPE ***/
+h1, h2, h3, h4, h5 {
+  margin-top: 0px;
+}
 h1 {
   font-size: 50px;
   line-height: 50px;
   margin: 0px;
 }
-
+.headline {
+  background-color: #FB8500;
+  margin-bottom: 14px;
+}
+  .h3 {
+    background-color: #000000;
+    padding: 1px 6px;
+    margin-left: 20px;
+    font-size: 24px;
+    vertical-align: middle;
+  }
 a, a:active, a:visited {
   color: #7F74EF;
 }
@@ -21,6 +36,8 @@ a:hover {
   text-decoration: none;
 }
 
+
+/*** LAYOUTS ***/
 .container-fluid {
   margin-top: 20px;
 }
@@ -33,7 +50,16 @@ a:hover {
 #main {
   margin-top: 100px;
 }
+  #main p {
+    color: #9999cd;
+  }
 
+#sectionC, #sectionD, #sectionE, #sectionF {
+  display: none;
+}
+
+
+/*** NAVIGATION ***/
 ul {
   list-style-type: none;
   padding-left: 0px;
@@ -113,6 +139,8 @@ ul {
   	border-top-left-radius: 30px;
   }
 
+
+/*** ICONS ***/
 .icons icon {
   float: left;
   margin-right: 8px;
@@ -142,7 +170,8 @@ icon {
     display: table-cell;
   }
 
-/* BUTTONS */
+
+/*** BUTTONS ***/
 .btn {
   text-align: right;
   color: #000000;
@@ -150,9 +179,7 @@ icon {
   padding: 16px 16px 6px 0px;
   margin-bottom: 14px;
   cursor: pointer;
-  transition: all 0.2s;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
+
 }
   .btn:active {
     opacity: 0.8;
